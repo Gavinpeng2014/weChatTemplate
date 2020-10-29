@@ -17,12 +17,13 @@
 ```
 1.确保你的vsCode IDE有安装 Easy LESS 插件
 2.git clone 模板后在 vsCode IDE 中开发微信小程序,在app.json中建立新路由,小程序IDE刷新编译,当小程序IDE帮你建立新页面后wxss新建同级同名less文件,less文件编辑保存,自动编译成wxss文件了!
-3.模板文件中的 .vscode 文件为 vsCode IDE 的配置文件感兴趣可自行研究
+3.模板文件中的 .vscode 文件为 vsCode IDE 的配置文件感兴趣的同学自行研究
 ```
 
-### 简单介绍一下项目模板中的状态管理器 
+### 模板中的状态管理器 
 ```
 
+插件官网地址: https://github.com/xiaoyao96/wxMiniStore
 ```
 
 ### 任何问题或有误人子弟的地方还请多多指教

@@ -1,8 +1,16 @@
 //app.js
 import { Request } from 'utils/request.js'
+import Store from 'utils/store.js'
+let store = new Store({
+  // 全局状态
+  state: {
+    num: 0
+  },
+  // 推荐开启局部模式 默认 false ,指定文件使用全局状态 在需要使用$state的组件中，加入useStore: true，表示当前页面或组件可用$state。
+  openPart: true
+})
 App({
   onLaunch() {
-    // console.log('当前项目请求API域名:',this.getNodeEnv())
     // 版本更新管理器
     if (wx.canIUse('getUpdateManager')) {
       const updateManager = wx.getUpdateManager()
@@ -34,8 +42,7 @@ App({
       })
     }
   },
-  globalData: {
-    userInfo: null
-  },
-  Request
+  globalData: { },
+  Request,
+  store
 })

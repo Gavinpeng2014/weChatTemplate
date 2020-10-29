@@ -1,5 +1,6 @@
 <!--logs.wxml-->
 <view class="container log-list">
+  <view>状态管理器num: {{ $state.num }}</view>
   <block wx:for="{{logs}}" wx:for-item="log" wx:key="index">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>

@@ -1,7 +1,11 @@
 <!--pages/index/index.wxml-->
 <view class="container index">
-  Tab1
+  <view class="index-head">Tab1</view>
   <view>
     <parser html="{{ html }}" tag-style="{{ tagStyle }}"/>
   </view>
+  <view>状态管理器num: {{ $state.num }}</view>
+  <view>(在Tab2页面中查看 状态管理器num 值)</view>
+  <button bindtap="increase">num +</button>
+  <button bindtap="decrease">num -</button>
 </view>

@@ -2,6 +2,7 @@
 const util = require('../../utils/util.js')
 
 Page({
+  useStore: true,
   data: {
     logs: []
   },

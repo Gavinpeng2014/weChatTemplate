@@ -1,7 +1,7 @@
 // pages/index/index.js
 const app = getApp()
 Page({
-
+  useStore: true,
   /**
    * 页面的初始数据
    */
@@ -18,7 +18,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    // this.testRequest()
+    this.testRequest()
   },
 
   /**
@@ -70,6 +70,9 @@ Page({
 
   },
   //-------------------自定义方法
+  /**
+   * 请求 演示 
+   */
   testRequest() {
     app.Request({
       url: '/test',
@@ -77,7 +80,25 @@ Page({
       loading: true,
       loadingText: '加载中...'
     }).then(res => {
-      
+      console.log(res)
     }).catch(err => { console.log(err) })
+  },
+  /**
+   *  演示 状态管理器 num +
+   */
+  increase() {
+    let { num } = app.store.getState()
+    app.store.setState({
+      num: num + 1
+    })
+  },
+  /**
+   * 演示 状态管理器 num -
+   */
+  decrease() {
+    let { num } = app.store.getState()
+    app.store.setState({
+      num: num - 1
+    })
   }
 })
