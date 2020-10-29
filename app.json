@@ -1,0 +1,74 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#07c160",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Tab1",
+        "iconPath": "assets/tabBar/2.png",
+        "selectedIconPath": "assets/tabBar/2-1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "Tab2",
+        "iconPath": "assets/tabBar/3.png",
+        "selectedIconPath": "assets/tabBar/3-1.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "test/testA/testA"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "test/testA/testA"
+      ]
+    },
+    {
+      "root": "packageC",
+      "pages": [
+        "test/testA/testA"
+      ]
+    },
+    {
+      "root": "packageD",
+      "pages": [
+        "test/testA/testA"
+      ]
+    },
+    {
+      "root": "packageE",
+      "pages": [
+        "test/testA/testA"
+      ]
+    }
+  ],
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序位置接口效果演示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<view class="container index">
+  Tab1
+</view>
