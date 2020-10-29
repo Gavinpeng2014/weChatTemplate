@@ -6,7 +6,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // 富文本内容
+    html: '<p>p标签</p><span>span标签<span><div>div标签</div>',
+    // 富文本插件内 标签样式设置
+    tagStyle: {
+      video: 'width: 100%;'
+    }
   },
 
   /**
