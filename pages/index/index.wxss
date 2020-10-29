@@ -1,1 +1,8 @@
 /**index.wxss**/
+.index {
+  width: 100%;
+}
+.index-head {
+  font-size: 32rpx;
+  color: #000;
+}

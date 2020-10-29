@@ -13,6 +13,13 @@
     插件官网地址: https://jin-yufeng.github.io/Parser/#/
 ```
 
+### vsCode IDE完美支持less(需要sass,stylus自行扩展)
+```
+1.确保你的vsCode IDE有安装 Easy LESS 插件
+2.git clone 模板后在 vsCode IDE 中开发微信小程序,在app.json中建立新路由,小程序IDE刷新编译,当小程序IDE帮你建立新页面后wxss新建同级同名less文件,less文件编辑保存,自动编译成wxss文件了!
+3.模板文件中的 .vscode 文件为 vsCode IDE 的配置文件感兴趣可自行研究
+```
+
 ### 简单介绍一下项目模板中的状态管理器 
 ```
 
