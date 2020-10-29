@@ -1,11 +1,13 @@
 <!--pages/index/index.wxml-->
 <view class="container index">
-  <view class="index-head">Tab1</view>
+  <view class="index-head">Hellow World !</view>
+  <view>Tab1</view>
   <view>
+    <view>---------以下富文本内容渲染---------</view>
     <parser html="{{ html }}" tag-style="{{ tagStyle }}"/>
   </view>
-  <view>状态管理器num: {{ $state.num }}</view>
-  <view>(在Tab2页面中查看 状态管理器num 值)</view>
+  <view>状态管理器 num: {{ $state.num }}</view>
+  <view>(加或减,然后在Tab2页面中查看 状态管理器 num )</view>
   <button bindtap="increase">num +</button>
   <button bindtap="decrease">num -</button>
 </view>
