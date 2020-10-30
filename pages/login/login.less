@@ -46,7 +46,7 @@ page {
         }
     }
     &-footer {
-        margin-top: 80px;
+        margin-top: 80rpx;
         .btn {
             width: 100%;
             font-size: 36rpx;
@@ -54,8 +54,13 @@ page {
             border: 0;
             color: #fff;
             background: linear-gradient(to right, #a4dd90, #69c48d);
+            transition: all .1s ease-out;
             &::after {
                 border: 0;
+            }
+            &.hoverClass {
+                transform: scale(.98);
+                opacity: .8;
             }
         }
     }

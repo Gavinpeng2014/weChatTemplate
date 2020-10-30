@@ -92,6 +92,7 @@ const Request = (params) => {
             },
             fail: err => {
                 reject(err)
+                wx.showToast({ title: '网络错误', icon: 'none' })
             },
             complete: () => {
                 if(params.loading) wx.hideLoading();

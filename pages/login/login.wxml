@@ -13,6 +13,6 @@
         <view class="explain">获得您的公开信息(昵称，头像等)</view>
     </view>
     <view class="login-footer">
-        <button class="btn" open-type="getUserInfo">确认授权并登陆</button>
+        <button class="btn" hover-class="hoverClass" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认授权并登陆</button>
     </view>
 </view>

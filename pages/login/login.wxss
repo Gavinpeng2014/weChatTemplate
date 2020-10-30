@@ -47,7 +47,7 @@ page {
   color: #b0b0b0;
 }
 .login-footer {
-  margin-top: 80px;
+  margin-top: 80rpx;
 }
 .login-footer .btn {
   width: 100%;
@@ -56,7 +56,12 @@ page {
   border: 0;
   color: #fff;
   background: linear-gradient(to right, #a4dd90, #69c48d);
+  transition: all 0.1s ease-out;
 }
 .login-footer .btn::after {
   border: 0;
+}
+.login-footer .btn.hoverClass {
+  transform: scale(0.98);
+  opacity: 0.8;
 }

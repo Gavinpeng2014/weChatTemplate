@@ -6,7 +6,7 @@ let store = new Store({
   state: {
     num: 0
   },
-  // 推荐开启局部模式 默认 false ,指定文件使用全局状态 在需要使用$state的组件中，加入useStore: true，表示当前页面或组件可用$state。
+  // 推荐开启局部模式 默认 false ,指定文件使用全局状态 在需要使用$state的组件中，加入 useStore: true, 表示当前页面或组件可用$state。
   openPart: true
 })
 App({
