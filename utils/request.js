@@ -44,6 +44,7 @@ const noGoLogin = [
  * @param params.url 接口地址
  * @param params.method 请求方式
  * @param params.data 请求参数
+ * @param params.header 请求头
  */
 const Request = (params) => {
     if(params.loading) wx.showLoading({ title: `${ params.loadingText ? params.loadingText : 'Loading..' }`, mask: true })
