@@ -9,7 +9,7 @@
         </view>
     </view>
     <view class="login-main">
-        <view class="title">TAKE TAKE申请获得以下权限</view>
+        <view class="title">{{ applets }}申请获得以下权限</view>
         <view class="explain">获得您的公开信息(昵称，头像等)</view>
     </view>
     <view class="login-footer">

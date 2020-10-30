@@ -42,7 +42,10 @@ App({
       })
     }
   },
-  globalData: { },
+  globalData: { 
+    // 当前小程序名称 用于登陆授权 或 其他提示拼接
+    applets: '小程序名称'
+  },
   Request,
   store
 })

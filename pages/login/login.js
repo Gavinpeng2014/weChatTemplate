@@ -6,8 +6,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 小程序名称
+    applets: app.globalData.applets,
     // 临时授权票据
-    code: ''
+    code: '',
   },
 
   /**
