@@ -98,6 +98,7 @@ Page({
         { code, openIdOld, unionIdOld } = that.data
     app.Request({
       url: '/authLogin',
+      method: 'POST',
       data: { code, encryptedData, iv },
       loading: true,
       loadingText: '授权中...'

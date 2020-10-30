@@ -18,8 +18,7 @@ const getNodeEnv = () => {
 /**
  * 域名
  */
-// const api = getNodeEnv()
-const api = 'http://api-take-bate.shushangyun.com'
+const api = getNodeEnv()
 
 /**
  * 屏蔽接口报错不提示 白名单接口
