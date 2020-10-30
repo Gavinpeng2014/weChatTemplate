@@ -1,0 +1,62 @@
+/* pages/login/login.wxss */
+page {
+    width: 100%;
+    height: 100%;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 60rpx 240rpx 60rpx;
+    box-sizing: border-box;
+    &-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30rpx 0;
+        padding: 0 0 40rpx 0;
+        border-bottom: 2rpx solid #cdcecd;
+        box-sizing: border-box;
+        .avatar {
+            width: 160rpx;  
+            height: 160rpx;  
+            border-radius: 50%;  
+            border: 4rpx solid #fff;  
+            box-shadow: 6rpx 6rpx 20rpx rgba(0, 0, 0, .2);  
+            overflow: hidden;
+        }
+        .userName {
+            font-size: 36rpx;
+            margin-top: 20rpx;
+        }
+    }
+    &-main {
+        text-align: center;
+        .title {
+            font-size: 36rpx;
+            color: #585858;
+        }
+        .explain {
+            font-size: 24rpx;
+            margin-top: 20rpx;
+            color: #b0b0b0;
+        }
+    }
+    &-footer {
+        margin-top: 80px;
+        .btn {
+            width: 100%;
+            font-size: 36rpx;
+            font-weight: normal;
+            border: 0;
+            color: #fff;
+            background: linear-gradient(to right, #a4dd90, #69c48d);
+            &::after {
+                border: 0;
+            }
+        }
+    }
+}

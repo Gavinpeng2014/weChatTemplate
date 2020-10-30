@@ -1,2 +1,18 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="container login">
+    <view class="login-head">
+        <view class="avatar">
+            <open-data type="userAvatarUrl"/>
+        </view>
+        <view class="userName">
+            <open-data type="userNickName"/>
+        </view>
+    </view>
+    <view class="login-main">
+        <view class="title">TAKE TAKE申请获得以下权限</view>
+        <view class="explain">获得您的公开信息(昵称，头像等)</view>
+    </view>
+    <view class="login-footer">
+        <button class="btn" open-type="getUserInfo">确认授权并登陆</button>
+    </view>
+</view>
