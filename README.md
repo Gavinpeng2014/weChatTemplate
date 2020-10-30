@@ -7,9 +7,11 @@
 - 模板分包中初始定义了一个testA文件,当分包真正被使用后含有至少一个文件,可自行删除test文件夹
 - 对请求进行初步封装,可根据开发版,体验版,正式版自动切换对应配置的请求API域名详情(详情请看'/utils/request'了解)
 - 模板中已使用 Parser富文本插件 
+```
     实用功能示例 <parser html="{{ html }}" tag-style="{{ tagStyle }}"/>
     data 中定义 tagStyle:{ video: 'width: 100%;' } 设置富文本插件内 标签样式设置
     插件官网地址: https://jin-yufeng.github.io/Parser/#/
+```
 
 ### vsCode IDE完美支持less(需要sass,stylus自行扩展)
 ```
