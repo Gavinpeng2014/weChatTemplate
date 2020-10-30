@@ -18,7 +18,8 @@ const getNodeEnv = () => {
 /**
  * 域名
  */
-const api = getNodeEnv()
+// const api = getNodeEnv()
+const api = 'http://api-take-bate.shushangyun.com'
 
 /**
  * 屏蔽接口报错不提示 白名单接口
@@ -55,6 +56,7 @@ const Request = (params) => {
             data: params.data,
             header: params.header,
             success: res => {
+                if(params.loading) wx.hideLoading();
                 // 需要与后端协商定义管理返回状态值
                 switch(res.data.code) {
                     case 200: 
@@ -91,11 +93,9 @@ const Request = (params) => {
                 }
             },
             fail: err => {
-                reject(err)
-                wx.showToast({ title: '网络错误', icon: 'none' })
-            },
-            complete: () => {
                 if(params.loading) wx.hideLoading();
+                wx.showToast({ title: '网络错误', icon: 'none' })
+                reject(err)
             }
         })
     })
