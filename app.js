@@ -1,10 +1,18 @@
 //app.js
 import { Request } from 'utils/request.js'
+import processor from 'utils/processor.js'
 import Store from 'utils/store.js'
 let store = new Store({
   // 全局状态
   state: {
-    num: 0
+    // 演示
+    num: 0,
+    // 登陆状态
+    loginState: processor.get('loginState',false),
+    // 登陆凭证
+    token: processor.get('token',''),
+    // 用户信息
+    userInfo: processor.get('userInfo',{})
   },
   // 推荐开启局部模式 默认 false ,指定文件使用全局状态 在需要使用$state的组件中，加入 useStore: true, 表示当前页面或组件可用$state。
   openPart: true
@@ -47,5 +55,6 @@ App({
     applets: '小程序名称'
   },
   Request,
+  processor,
   store
 })

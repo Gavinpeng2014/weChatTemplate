@@ -97,7 +97,30 @@ Page({
    */
   auto_login({ encryptedData, iv }) {
     let that = this,
-        { code, openIdOld, unionIdOld } = that.data
+        { code } = that.data
+    wx.showLoading({ title: '授权中', mask: true })
+    setTimeout(() => {
+      wx.hideLoading()
+      let simulationUserInfo = {
+        nickName: 'Gavin',
+        gender: 1,
+        language: 'zh_CN',
+        city: '',
+        province: '',
+        country: 'Yemen',
+        avatarUrl: 'https://thirdwx.qlogo.cn/mmopen/vi_32/jXxJDdtMKcZQoRfiaRBaPUn6ebEPFFxiaFYggKiaKV2ib4cELXdTasm73pICCGK01tDnN0DaOpaBq1Tta8CFrztSJw/132'
+      },
+      simulationToken = '00sd6fw8e4f98we4f94ea84f8'
+      app.store.setState({
+        token: simulationToken,
+        userInfo: simulationUserInfo
+      })
+      let { token, userInfo } = app.store.getState()
+      console.log(token)
+      app.processor.set('loginState',true)
+      app.processor.set('token',token)
+    }, 1500);
+    return false
     app.Request({
       url: '/authLogin',
       method: 'POST',
