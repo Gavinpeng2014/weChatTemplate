@@ -117,9 +117,9 @@ Page({
       })
       let { token, userInfo } = app.store.getState()
       console.log(token)
-      app.processor.set({ 'loginState': true, 'token': token, userInfo: simulationUserInfo })
       // app.processor.set('loginState',true)
       // app.processor.set('token',token)
+      app.processor.set({ 'loginState': true, 'token': token, userInfo: simulationUserInfo })
     }, 1500);
     return false
     app.Request({
