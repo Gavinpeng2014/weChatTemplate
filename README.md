@@ -45,8 +45,8 @@ const app = getApp()
 // 登陆状态 -- 示例 传入两个值(String,Any),缓存存储键 String, 默认值(可不传当缓存中没有返回字符串''): Any, 
 loginState: processor.get('loginState',false),
 在更新状态 app.store.setState({}) 后, 
-调用 app.processor.set(key,value) 进行缓存存储,
-方法1: 指定单个值存储 app.processor.set(key:string,value:any)
+调用 app.processor.set(key,value) 进行缓存存储(key类型string,value类型any),
+方法1: 指定单个值存储 app.processor.set(key,value)
 方法2: 多个值存储 app.processor.set({ key: value, key: value, ....})
 ```
 
